@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'MyApp'),
+      home: const MyHomePage(title: 'Laliga News'),
     );
   }
 }
@@ -103,11 +103,11 @@ class _MyHomePageState extends State<MyHomePage> {
               children: const <Widget>[
                 Text(
                   'BERITA TERBARU',
-                  style: TextStyle(fontSize: 14),
+                  style: TextStyle(fontSize: 15),
                 ),
                 Text(
                   'PERTANDINGAN HARI INI',
-                  style: TextStyle(fontSize: 14),
+                  style: TextStyle(fontSize: 15),
                 ),
               ],
             ),
@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Container(
                   padding: const EdgeInsets.all(12),
-                  width: double.infinity,
+                  width: double.maxFinite,
                   color: Colors.white,
                   child: const Center(
                     child: Text(
